@@ -26,8 +26,6 @@ Route::group(['middleware'=>'guest'],function(){
     Route::post('register',[AuthController::class,'register'])->name('register')->middleware('throttle:2,1');
 });
 
-
-
 Route::group(['middleware'=>'auth'],function(){
     Route::get('home',[AuthController::class,'home'])->name('home');
     Route::get('logout',[AuthController::class,'logout'])->name('logout');

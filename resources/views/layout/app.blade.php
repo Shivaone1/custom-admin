@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  @include('layouts.navigation')
+  @include('layout.navigation')
 
   @yield('container')
 
